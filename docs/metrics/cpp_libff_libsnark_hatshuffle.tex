@@ -1,0 +1,25 @@
+\documentclass{standalone}
+
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{tabular}{| 1 | 1 | 1 | 1 | 1 | 1 |}
+    \hline
+    \multicolumn{6}{|c|}{libff vs libsnark}\\
+    \hline
+    library & votes & CRS & Protocol & Parallel Protocol & Total\\ \hline
+    libff & 100 & 0.1884 & 0.7496 & 0.4984 & 0.9380 \\ \hline
+    libsnark & 100 & 0.1495 & 0.8014 & 0.5331 & 0.9509 \\ \hline
+    libff & 1000 & 0.6740 & 4.6807 & 3.0224 & 5.3547\\ \hline
+    libsnark & 1000 & 0.6039 & 4.7306 & 3.1762 & 5.3345 \\ \hline
+    libff & 10000 & 3.8045 & 38.7940 & 16.8659 & 42.5985\\ \hline
+    libsnark & 10000 & 3.8563 & 38.3891 & 21.2168 & 42.2454 \\ \hline
+    libff & 50000 & 15.5390 & 184.3543 & 74.1021 & 199.8933\\ \hline
+    libsnark & 50000 & 15.2326 & 183.7211 & 96.5089 & 198.9537\\ \hline
+    libff & 100000 & 26.9253& 363.5330 & 137.4504  & 390.4583 \\ \hline % 1 test
+    libsnark & 100000 & 27.0336 & 359.9804 & 191.2344 & 387.0140\\      % 1 test
+    \hline
+\end{tabular}
+
+\end{document}
