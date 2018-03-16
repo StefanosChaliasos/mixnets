@@ -32,8 +32,8 @@ def line_to_list(line):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-o", "--output", help="Directs the output to a name of\
-                    your choice")
-parser.add_argument("-f", "--file", help="Input file")
+                    your choice", default='stdout')
+parser.add_argument("-f", "--file", help="Input file", required=True)
 parser.add_argument("--header", dest="header", action="store_true")
 args = parser.parse_args()
 
