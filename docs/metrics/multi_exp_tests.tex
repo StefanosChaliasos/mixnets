@@ -1,0 +1,27 @@
+\documentclass{standalone}
+
+\usepackage[utf8]{inputenc}
+
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\begin{tabular}{ |p{1cm}|p{1cm}|p{1cm}|p{5cm}|p{5cm}| }
+    \hline
+    \multicolumn{5}{|c|}{Libff multi exponentiation routines} \\
+    \hline
+    votes & naive & naive plain & BDLO12 & bos coster \\
+    \hline
+     & - & - & Bos and Coster, "Addition chain heuristics", CRYPTO '89 &
+     Bernstein, Doumen, Lange, Oosterwijk, "Faster batch forgery identification"
+     , INDOCRYPT 2012 \\
+     \hline
+    1000 & 5.9543 & 6.0770 & 4.8239 & 4.6807 \\
+    10000 & 51.6209 & 59.5255 & 38.9441 & 38.7940 \\
+    100000 & - & - & 364.1626 & 363.5330 \\
+    \hline
+\end{tabular}
+
+\end{document}
