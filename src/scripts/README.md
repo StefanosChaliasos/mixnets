@@ -1,6 +1,6 @@
-#Useful scripts
+# Useful scripts
 
-###latex\_table\_to\_md.py
+### latex\_table\_to\_md.py
 
 usage:
 

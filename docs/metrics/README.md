@@ -9,11 +9,11 @@ with 8GB of RAM, 4 CPUs and 40GB hard disk; using Ubuntu 16.04 LTS.
 
 ## Papers
 
-* ["A Shuffle Argument Secure in the Generic Model"]
-(https://eprint.iacr.org/2016/866.pdf) Fauzi et al.
+* ["A Shuffle Argument Secure in the Generic Model"](https://eprint.iacr.org/2016/866.pdf) 
+Fauzi et al.
 
-* ["An Efficient Pairing-Based Shuffle Argument Draft"]
-(http://kodu.ut.ee/~lipmaa/papers/flsz17/hat_shuffle.pdf) Fauzi et al.
+* ["An Efficient Pairing-Based Shuffle Argument Draft"](http://kodu.ut.ee/~lipmaa/papers/flsz17/hat_shuffle.pdf) 
+Fauzi et al.
 
 ## Implementations - Libraries
 
@@ -22,10 +22,10 @@ with 8GB of RAM, 4 CPUs and 40GB hard disk; using Ubuntu 16.04 LTS.
 * [bplib](https://github.com/gdanezis/bplib)
 * [flz16](https://github.com/eellak/gsoc17module-zeus/tree/master/flz16) -
 SASGM 16
-* [hat\_shuffle(CPP)]
-(https://bitbucket.org/JannoSiim/hat_shuffle_implementation/) - EPBSA 17 CPP
-* [hat\_shuffle(Python libffpy)]
-(https://github.com/grnet/hat_shuffle/tree/libffpy) - EPBSA 17 Python (libffpy)
+* [hat\_shuffle(CPP)](https://bitbucket.org/JannoSiim/hat_shuffle_implementation/) -
+EPBSA 17 CPP
+* [hat\_shuffle(Python libffpy)](https://github.com/grnet/hat_shuffle/tree/libffpy) - 
+EPBSA 17 Python (libffpy)
 * [hat\_shuffle(Python bplib)](https://github.com/grnet/hat_shuffle) -
 EPBSA 17 Python (bplib)
 
