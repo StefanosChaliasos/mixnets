@@ -1,0 +1,72 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+Specs of virtual machine:
+
+\begin{itemize}
+\item Image: Ubuntu LTS 16.04
+\item CPUs: 4
+\item RAM: 8192MB
+\item System Disk: 40 GB
+\end{itemize}
+
+
+\begin{tabular}{ |c|c|p{3cm}|p{3cm}| }
+    \hline
+    \multicolumn{4}{|c|}{Protocol Totals Comparison} \\
+    \hline
+    Votes & EPBSA 17 CPP & EPBSA 17 Python CPP Wrapper & EPBSA 17 Python (libffpy) \\
+    \hline
+    1000 & 8.06s & 8.34s & 16.82s \\
+    10000 & 1:09.63m & 1:10.97m & 2:44.89m \\
+    100000 & 10:56.69m & 11:01.87 & 27:08.65 \\
+    \hline
+\end{tabular}
+\newline
+\vspace*{1 cm}
+\newline
+\begin{tabular}{ |c|c|c|c| }
+    \hline
+    \multicolumn{4}{|c|}{JSON files sizes} \\
+    \hline
+    File & 1000 & 10000 & 100000 \\
+    \hline
+    ciphertexts & 829K & 8.1M & 81M \\
+    crs & 1.3M & 13M & 124M \\
+    votes & 87K & 865K & 8.5M \\
+    proofs & 2.2M & 21M & 210M \\
+    \hline
+\end{tabular}
+\newline
+\vspace*{1 cm}
+\newline
+\begin{tabular}{ |c|c|c| }
+    \hline
+    \multicolumn{3}{|c|}{Totals Comparison (json)} \\
+    \hline
+    Votes & EPBSA 17 CPP & EPBSA 17 Python CPP Wrapper\\
+    \hline
+    1000 & 11.89s & 11.40s \\
+    10000 & 1:40.0m & 1:42.38m \\
+    100000 & 16:16.35m & 16:27.24m \\
+    \hline
+\end{tabular}
+\newline
+\vspace*{1 cm}
+\newline
+\begin{tabular}{ |c|c|c| }
+    \hline
+    \multicolumn{3}{|c|}{Parallel - Totals Comparison (json)} \\
+    \hline
+    Votes & EPBSA 17 CPP & EPBSA 17 Python CPP Wrapper\\
+    \hline
+    1000 & 9.75s & 10.08s \\
+    10000 & 1:20.78m & 1:20.53m \\
+    100000 & 12:33.78m & 12:30.22m \\
+    \hline
+\end{tabular}
+
+\end{document}

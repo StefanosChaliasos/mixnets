@@ -1,0 +1,33 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={Hat Shuffle Benchmark plot},
+    xlabel={Votes},
+    ylabel={Mix Time in minutes},
+    xmin=0, xmax=250000,
+    ymin=0, ymax=20,
+    xtick={10000,100000,200000},
+    % ytick={1,8,17},
+    ytick={0.57,8.45,17.41},
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (10000,0.57)(100000,8.45)(200000,17.41)
+    };
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
